@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.io.*;
 
-public class Leeeentos {
+public class Sorts {
 
 	public static int[] quickSort(int[] array, int index)
 	{
@@ -100,7 +100,7 @@ public class Leeeentos {
 				quickSort(array_data, array_data.length);
 				time_end = System.nanoTime();
 				
-				time_results[i] = (time_end - time_start) * Math.pow(10,9);
+				time_results[i] = (time_end - time_start) / Math.pow(10, 9);
 			}
 		
 			printArray(time_results);
@@ -116,7 +116,7 @@ public class Leeeentos {
 	{
 		try
 		{
-			FileWriter fw = new FileWriter("Vagos.csv");
+			FileWriter fw = new FileWriter("Vagos.csv", true);
 			//BufferedWriter bw = new BufferedWriter( new OutputStreamWriter( System.out ) );
 			BufferedWriter bw = new BufferedWriter( fw );
 			
@@ -125,9 +125,11 @@ public class Leeeentos {
 			
 			bw.write("\n");
 			bw.flush();
-			bw.close();
 		}
-		catch(Exception ex) {}
+		catch(Exception ex) 
+		{
+			ex.printStackTrace();
+		}
 	}
 	
 	public static void printArray(int[] array)
@@ -141,9 +143,11 @@ public class Leeeentos {
 			
 			bw.write("\n");
 			bw.flush();
-			bw.close();
 		}
-		catch(Exception ex) {}
+		catch(Exception ex) 
+		{
+			ex.printStackTrace();
+		}
 	}
 	
 	/**
@@ -160,7 +164,7 @@ public class Leeeentos {
 		
 			int[] array = generateArrays(15);
 			//printArray(array);
-			bw.write( binarySearch(array, 10, 0, array.length - 1) + "\n" );
+			//bw.write( binarySearch(array, 10, 0, array.length - 1) + "\n" );
 			
 			int experiments = 0;
 			int[] array_sizes = null;
@@ -179,9 +183,10 @@ public class Leeeentos {
 				array_sizes[i] = Integer.parseInt( sizes[i] );
 			
 			run_experiments(experiments, array_sizes);
-			
 		}
-		catch(Exception ex) {}
+		catch(Exception ex) {
+			ex.printStackTrace();
+		}
 
 	}
 
