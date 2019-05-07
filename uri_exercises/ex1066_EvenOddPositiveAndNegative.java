@@ -1,6 +1,6 @@
 import java.io.*;
  
-public class ex1001_ExtremalyBasic
+public class ex1066_EvenOddPositiveAndNegative
 {
 	public static void main(String args[])
 	{
