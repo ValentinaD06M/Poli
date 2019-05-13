@@ -6,7 +6,7 @@ public class ex1098_SequenceIJ4
 	public static void main(String args[])
 	{
 		BufferedWriter bw = new BufferedWriter( new OutputStreamWriter( System.out ));
-		DecimalFormat df = new DecimalFormat("0.0");
+		DecimalFormat df = new DecimalFormat( "0.0" );
 		
 		try
 		{
@@ -18,13 +18,13 @@ public class ex1098_SequenceIJ4
 		       	{
 		       		value = i / 5.0;
 		   			
-		   			if(value % 1 == 0.0)
+		   			if( value % 1 == 0.0 )
 		   			{
-		       			bw.write("I=" + (int)value + " J=" + (int)(j + value) + "\n");
+		       			bw.write( "I=" + (int)value + " J=" + (int)( j + value ) + "\n" );
 		   			}
 		       		else
 		       		{
-		       			bw.write("I=" + df.format(value) + " J=" + df.format(j + value) + "\n");
+		       			bw.write( "I=" + df.format( value ) + " J=" + df.format( j + value ) + "\n" );
 		       		}
 		       	}
 		   	}

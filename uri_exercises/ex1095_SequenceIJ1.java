@@ -10,9 +10,9 @@ public class ex1095_SequenceIJ1
 		{
 			int j = 60, i = 1;
 
-			while(j >= 0)
+			while( j >= 0 )
 			{
-				bw.write("I=" + i + " J=" + j + "\n");
+				bw.write( "I=" + i + " J=" + j + "\n" );
 				
 				i += 3;
 				j -= 5;

@@ -9,26 +9,26 @@ public class ex1113_AscendingAndDescending
 		
 		try
 		{
-			String[] num = br.readLine().split(" ");
-        	int a = Integer.parseInt(num[0]);
-        	int n = Integer.parseInt(num[1]);
+			String[] num = br.readLine().split( " " );
+        	int a = Integer.parseInt( num[0] );
+        	int n = Integer.parseInt( num[1] );
         
-        	while(a != n)
+        	while( a != n )
         	{
-		       	if(a < n)
+		       	if( a < n )
 		       	{
-		       		bw.write("Crescente\n");
+		       		bw.write( "Crescente\n" );
 		       	}
 		       	else
 		       	{
-		       		bw.write("Decrescente\n");
+		       		bw.write( "Decrescente\n" );
 		       	}
 		           
 		       	bw.flush();
 		       	
-		       	num = br.readLine().split(" ");
-		       	a = Integer.parseInt(num[0]);
-            	n = Integer.parseInt(num[1]);
+		       	num = br.readLine().split( " " );
+		       	a = Integer.parseInt( num[0] );
+            	n = Integer.parseInt( num[1] );
         	}
              
             br.close();

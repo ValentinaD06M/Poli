@@ -9,50 +9,50 @@ public class ex1041_CoordinatesOfAPoint
 		
 		try
 		{
-			String[] numbers = br.readLine().split(" ");
-			double x = Double.parseDouble(numbers[0]);
-			double y = Double.parseDouble(numbers[1]);
+			String[] numbers = br.readLine().split( " " );
+			double x = Double.parseDouble( numbers[0] );
+			double y = Double.parseDouble( numbers[1] );
 
-			if(x == 0.0)
+			if( x == 0.0 )
 			{
-				if(y == 0.0)
+				if( y == 0.0 )
 				{ 
-					bw.write("Origem\n"); 
+					bw.write( "Origem\n" ); 
 				}
 				else
 				{ 
-					bw.write("Eixo Y\n"); 
+					bw.write( "Eixo Y\n" ); 
 				}
 			}
 			else
 			{
-				if(y == 0.0)
+				if( y == 0.0 )
 				{ 
-					bw.write("Eixo X\n"); 
+					bw.write( "Eixo X\n" ); 
 				}
 				else
 				{
 
-					if(x > 0.0)
+					if( x > 0.0 )
 					{
-						if(y > 0.0)
+						if( y > 0.0 )
 						{ 
-							bw.write("Q1\n"); 
+							bw.write( "Q1\n" ); 
 						}
 						else
 						{ 
-							bw.write("Q4\n"); 
+							bw.write( "Q4\n" ); 
 						}
 					}
 					else
 					{
 						if(y > 0.0)
 						{ 
-							bw.write("Q2\n"); 
+							bw.write( "Q2\n" ); 
 						}
 						else
 						{ 
-							bw.write("Q3\n"); 
+							bw.write( "Q3\n" ); 
 						}
 					}
 				}

@@ -7,14 +7,14 @@ public class ex1002_AreaOfACircle
 	{
 		BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
 		BufferedWriter bw = new BufferedWriter( new OutputStreamWriter( System.out ));
-		DecimalFormat df = new DecimalFormat("#0.0000");
+		DecimalFormat df = new DecimalFormat( "#0.0000" );
 		
 		try
 		{
-			double R = Double.parseDouble(br.readLine());
-		   	double A = 3.14159 * Math.pow(R,2);
+			double R = Double.parseDouble( br.readLine() );
+		   	double A = 3.14159 * Math.pow( R, 2 );
 		   	
-		   	bw.write("A=" + df.format(A) + "\n");
+		   	bw.write( "A=" + df.format(A) + "\n" );
 		   	bw.flush();
         }
 		catch(Exception e) 

@@ -9,8 +9,8 @@ public class ex1132_MultiplesOf13
 		
 		try
 		{
-			int X = Integer.parseInt(br.readLine());
-			int Y = Integer.parseInt(br.readLine());
+			int X = Integer.parseInt( br.readLine() );
+			int Y = Integer.parseInt( br.readLine() );
 			
 			int acum = 0;
 			
@@ -18,18 +18,18 @@ public class ex1132_MultiplesOf13
 			{
 				for(int i = X; i <= Y; i++)
 				{
-					acum += (i % 13) != 0 ? i : 0;
+					acum += ( i % 13 ) != 0 ? i : 0;
 				}
 			}
 			else
 			{
 				for(int i = Y; i <= X; i++)
 				{
-					acum += (i % 13) != 0 ? i : 0;
+					acum += ( i % 13 ) != 0 ? i : 0;
 				}
 			}
 			
-			bw.write(acum + "\n");
+			bw.write( acum + "\n" );
 			bw.flush();
         }
 		catch(Exception e) 

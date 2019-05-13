@@ -9,13 +9,13 @@ public class ex1019_TimeConversion
 		
 		try
 		{
-			int total = Integer.parseInt(br.readLine());
+			int total = Integer.parseInt( br.readLine() );
 
 			int hours = total / 3600;
-			int minutes = (total % 3600) / 60;
-			int seconds = (total % 3600) % 60;
+			int minutes = ( total % 3600 ) / 60;
+			int seconds = ( total % 3600 ) % 60;
 
-			bw.write(hours + ":" + minutes + ":" + seconds + "\n");
+			bw.write( hours + ":" + minutes + ":" + seconds + "\n" );
 			bw.flush();
         }
 		catch(Exception e) 

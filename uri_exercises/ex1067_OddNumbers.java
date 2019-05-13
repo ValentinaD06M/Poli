@@ -9,15 +9,15 @@ public class ex1067_OddNumbers
 		
 		try
 		{
-			int numbers = Integer.parseInt(br.readLine());
+			int numbers = Integer.parseInt( br.readLine() );
         	
 		   	for(int i = 1; i <= numbers; i+=2)
 		   	{
-		   		bw.write(i + "\n");
+		   		bw.write( i + "\n" );
 		   	}
 		   	
 		   	bw.flush();
-            	br.close();
+            br.close();
         }
 		catch(Exception e) 
 		{

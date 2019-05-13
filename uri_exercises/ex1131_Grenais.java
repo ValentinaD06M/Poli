@@ -16,17 +16,17 @@ public class ex1131_Grenais
 		   	do
 		   	{
 		   		numbers = br.readLine().split(" ");
-		   		bw.write("Novo grenal (1-sim 2-nao)\n");
+		   		bw.write( "Novo grenal (1-sim 2-nao)\n" );
 		   		bw.flush();
 		   		matches++;
 		   		
-		   		if(Integer.parseInt(numbers[0]) < Integer.parseInt(numbers[1]))
+		   		if( Integer.parseInt( numbers[0] ) < Integer.parseInt( numbers[1] ) )
 		   		{
 		   			gremio++;
 		   		}
 		   		else
 		   		{
-		   			if(Integer.parseInt(numbers[0]) > Integer.parseInt(numbers[1]))
+		   			if( Integer.parseInt( numbers[0] ) > Integer.parseInt( numbers[1] ) )
 		       		{
 		   				inter++;
 		       		}
@@ -36,31 +36,31 @@ public class ex1131_Grenais
 		       		}
 		   		}
 		   	}
-		   	while(br.readLine().equals("1"));
+		   	while( br.readLine().equals( "1" ) );
         	
-		   	bw.write(matches + " grenais\n");
-		   	bw.write("Inter:" + inter + "\n");
-		   	bw.write("Gremio:" + gremio + "\n");
-		   	bw.write("Empates:" + empates + "\n");
+		   	bw.write( matches + " grenais\n" );
+		   	bw.write( "Inter:" + inter + "\n" );
+		   	bw.write( "Gremio:" + gremio + "\n" );
+		   	bw.write( "Empates:" + empates + "\n" );
 		   	
-		   	if(inter > gremio)
-		   	{
-		   		bw.write("Inter venceu mais\n");
+		   	if( inter > gremio )
+		   	{ 
+		   		bw.write( "Inter venceu mais\n" );
 		   	}
 		   	else
 		   	{
-		   		if(inter < gremio)
+		   		if( inter < gremio )
 		       	{
-		   			bw.write("Gremio venceu mais\n");
+		   			bw.write( "Gremio venceu mais\n" );
 		       	}
 		       	else
 		       	{
-		       		bw.write("Nao houve vencedor\n");
+		       		bw.write( "Nao houve vencedor\n" );
 		       	}
 		   	}
 		   	
 		   	bw.flush();
-            	br.close();
+            br.close();
         }
 		catch(Exception e) 
 		{

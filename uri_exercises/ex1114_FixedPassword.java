@@ -13,11 +13,11 @@ public class ex1114_FixedPassword
 
 			while( (number = Integer.parseInt( br.readLine() )) != 2002 )
 			{
-				bw.write("Senha Invalida\n");
+				bw.write( "Senha Invalida\n" );
 				bw.flush();
 			} 
 			
-			bw.write("Acesso Permitido\n");            
+			bw.write( "Acesso Permitido\n" );            
             bw.flush();
         }
 		catch(Exception e) 

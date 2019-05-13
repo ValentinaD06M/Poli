@@ -10,12 +10,12 @@ public class ex1096_SequenceIJ2
 		try
 		{
 			int a, b;
-			a = Integer.parseInt( br.readLine());
-			b = Integer.parseInt( br.readLine());
+			a = Integer.parseInt( br.readLine() );
+			b = Integer.parseInt( br.readLine() );
 			
 			int X = a + b;
 			
-			bw.write("X = " + X + "\n");
+			bw.write( "X = " + X + "\n" );
 			bw.flush();
         }
 		catch(Exception e) 

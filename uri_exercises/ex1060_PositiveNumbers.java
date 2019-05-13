@@ -13,10 +13,10 @@ public class ex1060_PositiveNumbers
 
 			for(int i = 0; i < 6; i++)
 			{
-				counter += Double.parseDouble(br.readLine()) > 0.0 ? 1 : 0;
+				counter += Double.parseDouble( br.readLine() ) > 0.0 ? 1 : 0;
 			}
 
-			bw.write(counter + " valores positivos\n");
+			bw.write( counter + " valores positivos\n" );
 			bw.flush();
         }
 		catch(Exception e) 

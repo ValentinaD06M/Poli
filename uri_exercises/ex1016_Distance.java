@@ -9,10 +9,10 @@ public class ex1016_Distance
 		
 		try
 		{
-			int distance = Integer.parseInt(br.readLine());
+			int distance = Integer.parseInt( br.readLine() );
 			int time = distance * 2;
 
-			bw.write(time + " minutos\n");
+			bw.write( time + " minutos\n" );
 			bw.flush();
         }
 		catch(Exception e) 

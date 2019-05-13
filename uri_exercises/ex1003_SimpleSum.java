@@ -9,11 +9,11 @@ public class ex1003_SimpleSum
 		
 		try
 		{
-			int A = Integer.parseInt(br.readLine());
-			int B = Integer.parseInt(br.readLine());
+			int A = Integer.parseInt( br.readLine() );
+			int B = Integer.parseInt( br.readLine() );
 			int SOMA = A + B;
 			
-			bw.write("SOMA = " + SOMA + "\n");
+			bw.write( "SOMA = " + SOMA + "\n" );
 			bw.flush();
         }
 		catch(Exception e) 

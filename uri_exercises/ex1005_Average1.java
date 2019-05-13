@@ -7,7 +7,7 @@ public class ex1005_Average1
 	{
 		BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
 		BufferedWriter bw = new BufferedWriter( new OutputStreamWriter( System.out ));
-		DecimalFormat df = new DecimalFormat("0.00000");
+		DecimalFormat df = new DecimalFormat( "0.00000" );
 		
 		try
 		{
@@ -16,8 +16,8 @@ public class ex1005_Average1
 			a = Double.parseDouble( br.readLine() );
 			b = Double.parseDouble( br.readLine() );
 			
-			x = ((a * 3.5) + (b * 7.5)) / 11;
-			bw.write("MEDIA = " + df.format(x) + "\n");
+			x = (( a * 3.5 ) + ( b * 7.5 )) / 11;
+			bw.write( "MEDIA = " + df.format(x) + "\n" );
 			bw.flush();
 		}
 		catch(Exception e) 

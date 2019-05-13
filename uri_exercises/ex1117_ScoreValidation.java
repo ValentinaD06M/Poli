@@ -7,7 +7,7 @@ public class ex1117_ScoreValidation
 	{
 		BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
 		BufferedWriter bw = new BufferedWriter( new OutputStreamWriter( System.out ));
-		DecimalFormat df = new DecimalFormat("#.00");		
+		DecimalFormat df = new DecimalFormat( "#.00" );		
 
 		try
 		{
@@ -15,23 +15,23 @@ public class ex1117_ScoreValidation
 			double mean = 0.0;
 			double number;
 
-			while(counter < 2)
+			while( counter < 2 )
 			{
-				number = Double.parseDouble(br.readLine());
-				if(number >= 0.0 && number <= 10.0)
+				number = Double.parseDouble( br.readLine() );
+				if( number >= 0.0 && number <= 10.0 )
 				{
 					counter++;
 					mean += number;
 				}
 				else
 				{
-					bw.write("nota invalida\n");
+					bw.write( "nota invalida\n" );
 				}
 			}
 
 			mean /= 2.0;
 
-			bw.write("media = " + df.format(mean) + "\n");
+			bw.write( "media = " + df.format( mean ) + "\n" );
 			bw.flush();
         }
 		catch(Exception e) 

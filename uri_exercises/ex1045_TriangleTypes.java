@@ -9,85 +9,84 @@ public class ex1045_TriangleTypes
 		
 		try
 		{
-			String[] numbers = br.readLine().split(" ");
-			double a = Double.parseDouble(numbers[0]);
-			double b = Double.parseDouble(numbers[1]);
-			double c = Double.parseDouble(numbers[2]);
+			String[] numbers = br.readLine().split( " " );
+			double a = Double.parseDouble( numbers[0] );
+			double b = Double.parseDouble( numbers[1] );
+			double c = Double.parseDouble( numbers[2] );
 			double temp;
 		         
-		    if(c > b)
+		    if( c > b )
 		    {
 		    	temp = c;
 		        c = b;
 		        b = temp;
 		    }
 		         
-		    if(b > a)
+		    if( b > a )
 		    {
 		        temp = b;
 		        b = a;
 		        a = temp;
 		    }
 		         
-		    if(a >= (b + c))
+		    if( a >= (b + c))
 		    {
-		     	bw.write("NAO FORMA TRIANGULO\n");
+		     	bw.write( "NAO FORMA TRIANGULO\n" );
 		    }
 		    else
 		    {
 		    	if((a * a) == (b * b) + (c * c))
 		       	{
-		           	bw.write("TRIANGULO RETANGULO\n");
+		           	bw.write( "TRIANGULO RETANGULO\n" );
 		       	}
 	  
-		       	if((a * a) > (b * b) + (c * c))
+		       	if( (a * a) > (b * b) + (c * c) )
 		       	{
-		           	bw.write("TRIANGULO OBTUSANGULO\n");
-	 				if(a == b)
+		           	bw.write( "TRIANGULO OBTUSANGULO\n" );
+	 				if( a == b )
 		       		{
-		           		if(a == c)
+		           		if( a == c )
 		           		{
-		               		bw.write("TRIANGULO EQUILATERO\n");
+		               		bw.write( "TRIANGULO EQUILATERO\n" );
 		           		}
 		          	 	else
 		           		{
-		               		bw.write("TRIANGULO ISOSCELES\n");
+		               		bw.write( "TRIANGULO ISOSCELES\n" );
 		           		}
 		       		}
 		       		else
 		       		{
-				      	if(a == c || b == c)
+				      	if( a == c || b == c )
 				      	{
-				          	bw.write("TRIANGULO ISOSCELES\n");
+				          	bw.write( "TRIANGULO ISOSCELES\n" );
 				      	}
 		       		}
 		       	}
 		         
-		       	if((a * a) < (b * b) + (c * c))
+		       	if( (a * a) < (b * b) + (c * c) )
 		       	{
-		           	bw.write("TRIANGULO ACUTANGULO\n");
+		           	bw.write( "TRIANGULO ACUTANGULO\n" );
 	 				
-					if(a == b)
+					if( a == b )
 		       		{
-		           		if(a == c)
+		           		if( a == c )
 		           		{
-		               		bw.write("TRIANGULO EQUILATERO\n");
+		               		bw.write( "TRIANGULO EQUILATERO\n" );
 		           		}
 					 	else
 					 	{
-					     	bw.write("TRIANGULO ISOSCELES\n");
+					     	bw.write( "TRIANGULO ISOSCELES\n" );
 					 	}
 		       		}
 		       		else
 		       		{
-				      	if(a == c || b == c)
+				      	if( a == c || b == c )
 				      	{
-				          	bw.write("TRIANGULO ISOSCELES\n");
+				          	bw.write( "TRIANGULO ISOSCELES\n" );
 				      	}
 		       		}
 		     	} 
 			}  
-		         
 		       
 		    bw.flush();
 		    br.close();

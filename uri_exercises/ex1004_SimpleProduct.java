@@ -9,11 +9,11 @@ public class ex1004_SimpleProduct
 		
 		try
 		{
-			int A = Integer.parseInt(br.readLine());
-			int B = Integer.parseInt(br.readLine());
+			int A = Integer.parseInt( br.readLine() );
+			int B = Integer.parseInt( br.readLine() );
 			int PROD = A * B;
 
-			bw.write("PROD = " + PROD + "\n");
+			bw.write( "PROD = " + PROD + "\n" );
 			bw.flush();
         }
 		catch(Exception e) 

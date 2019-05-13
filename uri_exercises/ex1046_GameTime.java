@@ -9,12 +9,12 @@ public class ex1046_GameTime
 		
 		try
 		{
-			String[] time = br.readLine().split(" ");
-			int start = Integer.parseInt(time[0]);
-			int end = Integer.parseInt(time[1]);
-			int hours = (start < end ? end : end + 24) - start;
+			String[] time = br.readLine().split( " " );
+			int start = Integer.parseInt( time[0] );
+			int end = Integer.parseInt( time[1] );
+			int hours = ( start < end ? end : end + 24 ) - start;
 
-			bw.write("O JOGO DUROU " + hours + " HORA(S)\n");
+			bw.write( "O JOGO DUROU " + hours + " HORA(S)\n" );
 			bw.flush();
         }
 		catch(Exception e) 

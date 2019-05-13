@@ -9,13 +9,14 @@ public class ex1001_ExtremalyBasic
 		
 		try
 		{
-			int a, b;
-			a = Integer.parseInt( br.readLine());
-			b = Integer.parseInt( br.readLine());
+			int a, b, X;
 			
-			int X = a + b;
+			a = Integer.parseInt( br.readLine() );
+			b = Integer.parseInt( br.readLine() );
 			
-			bw.write("X = " + X + "\n");
+			X = a + b;
+			
+			bw.write( "X = " + X + "\n" );
 			bw.flush();
         }
 		catch(Exception e) 

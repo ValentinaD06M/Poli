@@ -7,17 +7,17 @@ public class ex1038_Snack
 	{
 		BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
 		BufferedWriter bw = new BufferedWriter( new OutputStreamWriter( System.out ));
-		DecimalFormat df = new DecimalFormat("##.00");
+		DecimalFormat df = new DecimalFormat( "##.00" );
 
 		try
 		{
-			String[] numbers = br.readLine().split(" ");
-			int code = Integer.parseInt(numbers[0]);
-			int amount = Integer.parseInt(numbers[1]);
+			String[] numbers = br.readLine().split( " " );
+			int code = Integer.parseInt( numbers[0] );
+			int amount = Integer.parseInt( numbers[1] );
 			 
 			double price = 0.0;
 			 
-			switch(code)
+			switch( code )
 			{
 				case 1:
 				{
@@ -50,7 +50,7 @@ public class ex1038_Snack
 				break;
 			}
 			 
-			bw.write("Total: R$ " + df.format(price) + "\n");
+			bw.write( "Total: R$ " + df.format( price ) + "\n" );
 			bw.flush();
         }
 		catch(Exception e) 

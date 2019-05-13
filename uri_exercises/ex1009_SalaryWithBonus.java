@@ -7,15 +7,15 @@ public class ex1009_SalaryWithBonus
 	{
 		BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
 		BufferedWriter bw = new BufferedWriter( new OutputStreamWriter( System.out ));
-		DecimalFormat df =  new DecimalFormat("####.00");		
+		DecimalFormat df =  new DecimalFormat( "####.00" );		
 
 		try
 		{
-			double salary = Double.parseDouble(br.readLine());
-			double sold = Double.parseDouble(br.readLine());
-			double total = salary + (sold * 0.15);
+			double salary = Double.parseDouble( br.readLine() );
+			double sold = Double.parseDouble( br.readLine() );
+			double total = salary + ( sold * 0.15 );
 			
-			bw.write("TOTAL = R$ " + df.format(total) + "\n");
+			bw.write( "TOTAL = R$ " + df.format(total) + "\n" );
 			bw.flush();
         }
 		catch(Exception e) 

@@ -15,58 +15,58 @@ public class ex1049_Animal
 			 words[1] = br.readLine();
 			 words[2] = br.readLine();
              
-			 if(words[0].equals("vertebrado"))
+			 if( words[0].equals( "vertebrado" ))
 			 {
-				 if(words[1].equals("ave"))
+				 if( words[1].equals( "ave" ))
 				 {
-					 if(words[2].equals("carnivoro"))
+					 if( words[2].equals( "carnivoro" ))
 					 {
-						 bw.write("aguia");
+						 bw.write( "aguia" );
 					 }
 					 else
 					 {
-						 bw.write("pomba");
+						 bw.write( "pomba" );
 					 }
 				 }
 				 else
 				 {
-					 if(words[2].equals("onivoro"))
+					 if( words[2].equals( "onivoro" ))
 					 {
-						 bw.write("homem");
+						 bw.write( "homem" );
 					 }
 					 else
 					 {
-						 bw.write("vaca");
+						 bw.write( "vaca" );
 					 }
 				 }
 			 }
 			 else
 			 {
-				 if(words[1].equals("inseto"))
+				 if( words[1].equals( "inseto" ))
 				 {
-					 if(words[2].equals("hematofago"))
+					 if( words[2].equals( "hematofago" ))
 					 {
-						 bw.write("pulga");
+						 bw.write( "pulga" );
 					 }
 					 else
 					 {
-						 bw.write("lagarta");
+						 bw.write( "lagarta" );
 					 }
 				 }
 				 else
 				 {
-					 if(words[2].equals("hematofago"))
+					 if( words[2].equals( "hematofago" ))
 					 {
-						 bw.write("sanguessuga");
+						 bw.write( "sanguessuga" );
 					 }
 					 else
 					 {
-						 bw.write("minhoca");
+						 bw.write( "minhoca" );
 					 }
 				 }
 			 }
             
-			 bw.write("\n");
+			 bw.write( "\n" );
 			 bw.flush();
             
 			 br.close();

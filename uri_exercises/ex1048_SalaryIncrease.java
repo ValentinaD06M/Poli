@@ -7,36 +7,36 @@ public class ex1048_SalaryIncrease
 	{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        DecimalFormat df = new DecimalFormat("0.00");
+        DecimalFormat df = new DecimalFormat( "0.00" );
             
         try
         {
-        	double salary = Double.parseDouble(br.readLine());
+        	double salary = Double.parseDouble( br.readLine() );
         	double newSalary;
         	int percentual;
         	
-        	if(salary > 2000)
+        	if( salary > 2000 )
         	{
         		percentual = 4;
         		newSalary = salary * 1.04;
         	}
         	else
         	{
-        		if(salary > 1200)
+        		if( salary > 1200 )
             	{
             		percentual = 7;
             		newSalary = salary * 1.07;
             	}
             	else
             	{
-            		if(salary > 800)
+            		if( salary > 800 )
                 	{
                 		percentual = 10;
                 		newSalary = salary * 1.1;
                 	}
                 	else
                 	{
-                		if(salary > 400)
+                		if( salary > 400 )
                     	{
                     		percentual = 12;
                     		newSalary = salary * 1.12;
@@ -50,9 +50,9 @@ public class ex1048_SalaryIncrease
             	}
         	}
         	
-        	bw.write("Novo salario: " + df.format(newSalary) + "\n");
-        	bw.write("Reajuste ganho: " + df.format(newSalary - salary) + "\n");
-        	bw.write("Em percentual: " + percentual + " %\n");
+        	bw.write( "Novo salario: " + df.format( newSalary ) + "\n" );
+        	bw.write( "Reajuste ganho: " + df.format( newSalary - salary ) + "\n" );
+        	bw.write( "Em percentual: " + percentual + " %\n" );
         	
         	bw.flush();
         	br.close();

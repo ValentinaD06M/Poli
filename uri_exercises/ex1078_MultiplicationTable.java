@@ -9,17 +9,17 @@ public class ex1078_MultiplicationTable
 		
 		try
 		{
-			int n = Integer.parseInt(br.readLine());
+			int n = Integer.parseInt( br.readLine() );
 		   	int result = 0;
 		   	
 		   	for(int i = 1; i < 11; i++)
 		   	{
 		   		result += n;
-		   		bw.write(i + " x " + n + " = " + result + "\n");
+		   		bw.write( i + " x " + n + " = " + result + "\n" );
 		   	}
 		   	
 		   	bw.flush();
-		    	br.close();
+	    	br.close();
         }
 		catch(Exception e) 
 		{

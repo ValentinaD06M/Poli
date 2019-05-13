@@ -13,10 +13,10 @@ public class ex1065_EvenBetweenFiveNumbers
 
 			for(int i = 0; i < 5; i++)
 			{
-				counter += Integer.parseInt(br.readLine()) % 2 == 0 ? 1 : 0;
+				counter += Integer.parseInt( br.readLine() ) % 2 == 0 ? 1 : 0;
 			}
 
-			bw.write(counter + " valores pares\n");
+			bw.write( counter + " valores pares\n" );
 			bw.flush();
         }
 		catch(Exception e) 

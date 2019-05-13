@@ -14,13 +14,13 @@ public class ex1008_Salary
 			int A,B;
 			double C,prom;
 
-			A = Integer.parseInt(br.readLine());
-			B = Integer.parseInt(br.readLine());
-			C = Double.parseDouble(br.readLine());
+			A = Integer.parseInt( br.readLine( ));
+			B = Integer.parseInt( br.readLine() );
+			C = Double.parseDouble( br.readLine() );
 
 			prom = B * C;
 
-			bw.write("NUMBER = " + A + "\n" + "SALARY = U$ " + df.format(prom)+ "\n");
+			bw.write( "NUMBER = " + A + "\n" + "SALARY = U$ " + df.format(prom)+ "\n" );
 			bw.flush();
         }
 		catch(Exception e)

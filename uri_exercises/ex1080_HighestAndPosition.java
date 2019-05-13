@@ -9,20 +9,21 @@ public class ex1080_HighestAndPosition
 		
 		try
 		{
-			int max = 0; int index = -1;
+			int max = 0; 
+			int index = -1;
 			int n;
 
 			for(int i = 0; i < 100; i++)
 			{
-				n = Integer.parseInt(br.readLine());
-				if(n > max)
+				n = Integer.parseInt( br.readLine() );
+				if( n > max )
 				{
 					max = n; 
 					index = i + 1;
 				}
 			}
 
-			bw.write(max + "\n" + index + "\n");
+			bw.write( max + "\n" + index + "\n" );
 			bw.flush();
         }
 		catch(Exception e) 

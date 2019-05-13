@@ -12,7 +12,7 @@ public class ex1097_SequenceIJ3
 		   	{
 		   		for(int j = i + 6; j > i + 3; j--)
 		       	{
-		       		bw.write("I=" + i + " J=" + j + "\n");
+		       		bw.write( "I=" + i + " J=" + j + "\n" );
 		       	}
 		   	}
 		   	

@@ -7,16 +7,19 @@ public class ex1011_Sphere
 	{
 		BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
 		BufferedWriter bw = new BufferedWriter( new OutputStreamWriter( System.out ));
-		DecimalFormat df = new DecimalFormat("##0.000");
+		DecimalFormat df = new DecimalFormat( "##0.000" );
 		
 		try
 		{
 			long R = Integer.parseInt( br.readLine() );
-			 double vol = (double) ((4.0 / 3.0) * 3.14159 * Math.pow(R, 3));
+			 double vol = (double) (( 4.0 / 3.0 ) * 3.14159 * Math.pow( R, 3 ));
 			
-			bw.write( "VOLUME = " + df.format( vol) + "\n");
+			bw.write( "VOLUME = " + df.format( vol ) + "\n" );
 			bw.flush();
 		}
-		catch(Exception e) {}
+		catch(Exception e) 
+		{
+			e.printStackTrace();
+		}
 	}
 }
